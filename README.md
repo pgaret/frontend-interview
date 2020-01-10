@@ -48,7 +48,17 @@ Please, answer the following questions in this readme, underneath the question
 
 1. Name a newer feature of javascript that you believe is extra useful, and discuss how you have used it in this project, or how you would use it if needed.
 
+Object destructuring is relatively new and I personally think one of unsung heroes of post ES6 JS. Being able to pull out a variety of variables from any given object, complete with defaults and aliasing, is a very convenient and powerful tool for code readability, not to mention making new features like hooks way more user clean and user friendly.
+
 2. What are 3 things you think `React` does very poorly? What tools do this better, if any?
+
+This is an interesting question, because I feel that React is best thought of as a useful foundation on which other technologies are usually placed. It also updates at such a rapid pace - a couple years ago, my major complaints lay in features that hooks mostly added, things like better data management (now we have context). 
+
+One thing React does poorly is error handling - when the app encounters a an error from, say, a variable that is in the wrong format, the whole app crashes rather than localizing the error around the component. This can be prepared for with due diligence, but I'd love to see the React team give us a Component that at least is what is shown if an error happens instead of the crash screen.
+
+React also doesn't have any built-in functionality for websockets, so you have to build a whole separate websocket handling mini-app, and then have it connect with React in whichever way you want. I will say that it is less of a pain now with custom hooks, but real-time data consumption still seems like a prevalent enough issue to warrant an official hook or other integration.
+
+This isn't quite a coding thing per se, but as a third thing I'd say React doesn't do a great job of teaching its best practices. Whether it be new features like hooks, deprecations like componentWillMount, the movement to functional components...it strikes me sometimes that when I Google React questions, invariably I wind up at stack overflow or blog posts rather than the official documentation. And when those new features come out, I usually find myself glancing through the technical documentation and release notes, getting confused, and having to go off and read elsewhere for a better explanation. And I've been using React almost daily for 3 years. Back several years ago when I worked with Angular a bit, I was pleasantly surprised that their documentation seemed actually designed for the average human.
 
 ## Submissions
 

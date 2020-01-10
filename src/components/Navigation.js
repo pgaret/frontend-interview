@@ -18,7 +18,7 @@ const routes = [
   {
     label: "Repositories",
     to: REPOSITORIES_ROUTE
-  }
+  },
 ];
 
 const Navigation = () => {

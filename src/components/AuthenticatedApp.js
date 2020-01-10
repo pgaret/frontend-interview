@@ -3,6 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import Navigation from "./Navigation";
 import Home from "./Home";
 import Profile from "./Profile";
+import Repositories from "./Repositories";
+import Repository from "./Repository/Repository";
 
 const AuthenticatedApplication = () => {
   return (
@@ -13,6 +15,16 @@ const AuthenticatedApplication = () => {
         <Route path="/profile">
           <Profile />
         </Route>
+
+          <Route exact path="/repositories/:id">
+              <Repository />
+          </Route>
+
+        <Route exact path="/repositories">
+          <Repositories />
+        </Route>
+
+
 
         <Route path="/">
           <Home />
